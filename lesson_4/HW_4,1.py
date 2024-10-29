@@ -24,17 +24,15 @@ line_count = len(python_zen.split('\n'))
 print(line_count)
 
 split_zen = python_zen.split()
-is_zen = Counter(split_zen)
-and_zen = Counter(split_zen)
-or_zen = Counter(split_zen)
+zen_counter = Counter(split_zen)
 
 element_is = 'is'
 element_and = 'and'
 element_or = 'or'
 
-count_is = is_zen[element_is]
-count_and = is_zen[element_and]
-count_or = is_zen[element_or]
+count_is = zen_counter[element_is]
+count_and = zen_counter[element_and]
+count_or = zen_counter[element_or]
 
 dict_zen = {element_is:count_is, element_and:count_and, element_or:count_or}
 print(dict_zen)
